@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Getir - Dakikalar İçinde Kapınızda</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--NAVBAR START-->
+    <div class="navbackground fixed-top d-none d-lg-block">
+        <div class="container">
+            <div class="row justify-content-between pad5">
+                <div class="col-12	col-sm-12	col-md-12 col-lg-6 ml-0 pl-0 navfont">
+                    <ul class="navlist  ml-0 pl-0">
+                        <li class="px-3 py-2 navstyleactive navfl">
+                            <a class="coloryellow">getir</a>
+                        </li>
+                        <li class="px-3 py-2 navstyle navml navfl">
+                            <a class="colorwhite" href="#">getiryemek</a>
+                        </li>
+                        <li class="px-3 py-2 navstyle navml navfl">
+                            <a class="colorwhite" href="#">getirbüyük</a>
+                        </li>
+                        <li class="px-3 py-2 navstyle navml navfl">
+                            <a class="colorwhite" href="#">getirsu</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12	col-sm-12	col-md-12 col-lg-6 pr-0 mr-0 navfont d-none d-lg-block">
+                    <div class="d-flex flex-row-reverse colorwhite fontdefault">
+                        <div class="pl-2 pt-2 pb-2 fontbold ml-3"><img src="img/adduser.png" class="mx-2 imgstyle">Kayıt Ol</div>
+                        <div class="p-2 fontbold ml-3"><img src="img/user.png" class="mx-2 imgstyle">Giriş yap</div>
+                        <div class="p-2"><img src="img/language.png" class="mx-2" style="width: 17px; height: 17px;">Türkçe (TR)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbackground d-block d-lg-none">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-12	col-sm-12	col-md-12 col-lg-6 ml-0 pl-0 navfont">
+                    <ul class="navlist  ml-0 pl-0">
+                        <li class="px-3 py-2 navstyleactive navfl">
+                            <a class="coloryellow">getir</a>
+                        </li>
+                        <li class="px-3 py-2 navstyle navml navfl">
+                            <a class="colorwhite" href="#">getiryemek</a>
+                        </li>
+                        <li class="px-3 py-2 navstyle navml navfl">
+                            <a class="colorwhite" href="#">getirbüyük</a>
+                        </li>
+                        <li class="px-3 py-2 navstyle navml navfl">
+                            <a class="colorwhite" href="#">getirsu</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12	col-sm-12	col-md-12 col-lg-6 pr-0 mr-0 navfont d-none d-lg-block">
+                    <div class="d-flex flex-row-reverse colorwhite fontdefault">
+                        <div class="pl-2 pt-2 pb-2 fontbold ml-3"><img src="img/adduser.png" class="mx-2 imgstyle">Kayıt Ol</div>
+                        <div class="p-2 fontbold ml-3"><img src="img/user.png" class="mx-2 imgstyle">Giriş yap</div>
+                        <div class="p-2"><img src="img/language.png" class="mx-2 langImg" >Türkçe (TR)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--NAVBAR END-->
+    <!--SLİDER START-->
+    <div class="container-fluid d-none d-md-block">
+        <div class="row">
+            <div class="col-12 mr-0 pr-0 position-absolute sliderDiv">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img id="sliderImg" class="img-fluid" src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-1.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img id="sliderImg" class="img-fluid" src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-2.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img id="sliderImg" class="img-fluid" src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-3.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img id="sliderImg" class="img-fluid" src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-4.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="purpleLayout" class="col-12"></div>
+            <div id="slogan" class="col-12">
+                <div class="container">
+                    <div class="row mt-5">
+                        <div class="col mt-5 pt-5 ml-0 pl-0">
+                            <img src="https://getir.com/_next/static/images/bimutluluk-b3a7fcb14fc9a9c09b60d7dc9b1b8fd6.svg">
+                            <h1 class="mt-5" style="color: #fff;">Dakikalar içinde <br>kapınızda</h1>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--SLİDER END-->
+
+    <!--MOBILE CONTENT START-->
+    <div class="container-fluid mt-5 pl-0 pr-0 mr-0 ml-0 d-block d-md-none">
+        <div class="row mobileContent">
+            <div class="col">
+                <img src="https://cdn.getir.com/misc/62a0ca37c43b9c36436ef4f4_banner_tr_1654704721813.png">
+            </div>
+        </div>
+    </div>
+    <!--MOBILE CONTENT END-->
+
+
+
+    <!--CATEGORIES LG SCREEN START-->
+    <div style="background-color: #fff;" class="d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col mt-4 ml-0 pl-0">
+                    <h6>Kategoriler</h6>
+                </div>
+            </div>
+            <div class="row catRows">
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/f66f92ea-f680-4dd4-808b-8f8a71709a86.jpeg">
+                    <p class="mt-2">Su & İçecek</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/d43a0396-b588-4666-ac43-af4b3159fee2.jpeg">
+                    <p class="mt-2">Meyve & Sebze</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/6814548a-24f2-4ba2-9762-7ca3e96a3d40.jpeg">
+                    <p class="mt-2">Fırından</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/4c2530e6-d2d2-4a77-96a0-917f16165f57.jpeg">
+                    <p class="mt-2">Temel Gıda</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/8393d053-6478-410a-a234-d1a914185b35.jpeg">
+                    <p class="mt-2">Atıştırmalık</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/0f329100-f339-4503-bf56-095ab4c11c98.jpeg">
+                    <p class="mt-2">Dondurma</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/afee33f9-93fe-4b87-8094-6e5c7f13c064.jpeg">
+                    <p class="mt-2">Süt Ürünleri</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/35640646-a603-4b9a-96db-96918025fb61.jpeg">
+                    <p class="mt-2">Kahvaltılık</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/b01619f2-e12e-4777-85a2-5727abb62d51.jpeg">
+                    <p class="mt-2">Yiyecek</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/c594be17-998d-475e-91a5-89924798a27d.jpeg">
+                    <p class="mt-2">Fit & Form</p>
+                </div>
+            </div>
+            <div class="row catRows">
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/d7b76064-6334-43a4-aafe-ace887ec2da6.jpeg">
+                    <p class="mt-2">Kişisel Bakım</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/29bcb34e-ae77-46f8-b27c-d36e50275709.jpeg">
+                    <p class="mt-2">Ev Bakım</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/d737c0bd-538c-486c-9485-46aff62856d1.jpeg">
+                    <p class="mt-2">Ev & Yaşam</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/d6e1fc47-6dbe-4be0-9e21-8b3a3f9cfecd.jpeg">
+                    <p class="mt-2">Teknoloji</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/907cbf21-00b7-4f94-b257-9fd8b104cf02.jpeg">
+                    <p class="mt-2">Evcil Hayvan</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/517efd09-95b6-466a-980e-55db579ebddc.jpeg">
+                    <p class="mt-2">Bebek</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/34e1cf54-bf96-498b-ba55-680b960cfcfc.jpeg">
+                    <p class="mt-2">Cinsel Sağlık</p>
+                </div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </div>
+    <!--CATEGORIES LG SCREEN END-->
+
+
+    <!--CATEGORIES MD SCREEN START-->
+    <div style="background-color: #fff;" class="d-none d-md-block d-lg-none">
+        <div class="container">
+            <div class="row">
+                <div class="col mt-4 ml-0 pl-3">
+                    <h6>Kategoriler</h6>
+                </div>
+            </div>
+            <div class="row catRows">
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/f66f92ea-f680-4dd4-808b-8f8a71709a86.jpeg">
+                    <p class="mt-2">Su & İçecek</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/d43a0396-b588-4666-ac43-af4b3159fee2.jpeg">
+                    <p class="mt-2">Meyve & Sebze</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/6814548a-24f2-4ba2-9762-7ca3e96a3d40.jpeg">
+                    <p class="mt-2">Fırından</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/4c2530e6-d2d2-4a77-96a0-917f16165f57.jpeg">
+                    <p class="mt-2">Temel Gıda</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/8393d053-6478-410a-a234-d1a914185b35.jpeg">
+                    <p class="mt-2">Atıştırmalık</p>
+                </div>
+            </div>
+            <div class="row catRows">
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/0f329100-f339-4503-bf56-095ab4c11c98.jpeg">
+                    <p class="mt-2">Dondurma</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/afee33f9-93fe-4b87-8094-6e5c7f13c064.jpeg">
+                    <p class="mt-2">Süt Ürünleri</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/35640646-a603-4b9a-96db-96918025fb61.jpeg">
+                    <p class="mt-2">Kahvaltılık</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/b01619f2-e12e-4777-85a2-5727abb62d51.jpeg">
+                    <p class="mt-2">Yiyecek</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/c594be17-998d-475e-91a5-89924798a27d.jpeg">
+                    <p class="mt-2">Fit & Form</p>
+                </div>
+            </div>
+            <div class="row catRows">
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/d7b76064-6334-43a4-aafe-ace887ec2da6.jpeg">
+                    <p class="mt-2">Kişisel Bakım</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/29bcb34e-ae77-46f8-b27c-d36e50275709.jpeg">
+                    <p class="mt-2">Ev Bakım</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/d737c0bd-538c-486c-9485-46aff62856d1.jpeg">
+                    <p class="mt-2">Ev & Yaşam</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/d6e1fc47-6dbe-4be0-9e21-8b3a3f9cfecd.jpeg">
+                    <p class="mt-2">Teknoloji</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/907cbf21-00b7-4f94-b257-9fd8b104cf02.jpeg">
+                    <p class="mt-2">Evcil Hayvan</p>
+                </div>
+            </div>
+            <div class="row catRows">
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/517efd09-95b6-466a-980e-55db579ebddc.jpeg">
+                    <p class="mt-2">Bebek</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/34e1cf54-bf96-498b-ba55-680b960cfcfc.jpeg">
+                    <p class="mt-2">Cinsel Sağlık</p>
+                </div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </div>
+    <!--CATEGORIES MD SCREEN END-->
+
+
+    <!--CATEGORIES SM SCREEN START-->
+    <div style="background-color: #fff;" class="d-none d-sm-block d-md-none">
+        <div class="container">
+            <div class="row">
+                <div class="col mt-4 ml-0 pl-3">
+                    <h6>Kategoriler</h6>
+                </div>
+            </div>
+            <div class="row catRows">
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/f66f92ea-f680-4dd4-808b-8f8a71709a86.jpeg">
+                    <p class="mt-2">Su & İçecek</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/d43a0396-b588-4666-ac43-af4b3159fee2.jpeg">
+                    <p class="mt-2">Meyve & Sebze</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/6814548a-24f2-4ba2-9762-7ca3e96a3d40.jpeg">
+                    <p class="mt-2">Fırından</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/4c2530e6-d2d2-4a77-96a0-917f16165f57.jpeg">
+                    <p class="mt-2">Temel Gıda</p>
+                </div>
+            </div>
+            <div class="row catRows">
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/8393d053-6478-410a-a234-d1a914185b35.jpeg">
+                    <p class="mt-2">Atıştırmalık</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/0f329100-f339-4503-bf56-095ab4c11c98.jpeg">
+                    <p class="mt-2">Dondurma</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/afee33f9-93fe-4b87-8094-6e5c7f13c064.jpeg">
+                    <p class="mt-2">Süt Ürünleri</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/35640646-a603-4b9a-96db-96918025fb61.jpeg">
+                    <p class="mt-2">Kahvaltılık</p>
+                </div>
+            </div>
+            <div class="row catRows">
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/b01619f2-e12e-4777-85a2-5727abb62d51.jpeg">
+                    <p class="mt-2">Yiyecek</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/c594be17-998d-475e-91a5-89924798a27d.jpeg">
+                    <p class="mt-2">Fit & Form</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/d7b76064-6334-43a4-aafe-ace887ec2da6.jpeg">
+                    <p class="mt-2">Kişisel Bakım</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/29bcb34e-ae77-46f8-b27c-d36e50275709.jpeg">
+                    <p class="mt-2">Ev Bakım</p>
+                </div>
+            </div>
+            <div class="row catRows">
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/d737c0bd-538c-486c-9485-46aff62856d1.jpeg">
+                    <p class="mt-2">Ev & Yaşam</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/d6e1fc47-6dbe-4be0-9e21-8b3a3f9cfecd.jpeg">
+                    <p class="mt-2">Teknoloji</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/907cbf21-00b7-4f94-b257-9fd8b104cf02.jpeg">
+                    <p class="mt-2">Evcil Hayvan</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/517efd09-95b6-466a-980e-55db579ebddc.jpeg">
+                    <p class="mt-2">Bebek</p>
+                </div>
+            </div>
+            <div class="row catRows">
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/34e1cf54-bf96-498b-ba55-680b960cfcfc.jpeg">
+                    <p class="mt-2">Cinsel Sağlık</p>
+                </div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </div>
+    <!--CATEGORIES SM SCREEN END-->
+    <!--CATEGORIES XS SCREEN START-->
+    <div style="background-color: #fff;" class="d-block d-sm-none">
+        <div class="container">
+            <div class="row">
+                <div class="col mt-4 ml-0 pl-3">
+                    <h6>Kategoriler</h6>
+                </div>
+            </div>
+            <div class="row catRows">
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/f66f92ea-f680-4dd4-808b-8f8a71709a86.jpeg">
+                    <p class="mt-2">Su & İçecek</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/d43a0396-b588-4666-ac43-af4b3159fee2.jpeg">
+                    <p class="mt-2">Meyve & Sebze</p>
+                </div>
+            </div>
+            <div class="row catRows">
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/6814548a-24f2-4ba2-9762-7ca3e96a3d40.jpeg">
+                    <p class="mt-2">Fırından</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/4c2530e6-d2d2-4a77-96a0-917f16165f57.jpeg">
+                    <p class="mt-2">Temel Gıda</p>
+                </div>
+            </div>
+            <div class="row catRows">
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/8393d053-6478-410a-a234-d1a914185b35.jpeg">
+                    <p class="mt-2">Atıştırmalık</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/0f329100-f339-4503-bf56-095ab4c11c98.jpeg">
+                    <p class="mt-2">Dondurma</p>
+                </div>
+            </div>
+            <div class="row catRows">
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/afee33f9-93fe-4b87-8094-6e5c7f13c064.jpeg">
+                    <p class="mt-2">Süt Ürünleri</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/35640646-a603-4b9a-96db-96918025fb61.jpeg">
+                    <p class="mt-2">Kahvaltılık</p>
+                </div>
+            </div>
+            <div class="row catRows">
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/b01619f2-e12e-4777-85a2-5727abb62d51.jpeg">
+                    <p class="mt-2">Yiyecek</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/c594be17-998d-475e-91a5-89924798a27d.jpeg">
+                    <p class="mt-2">Fit & Form</p>
+                </div>
+            </div>
+            <div class="row catRows">
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/d7b76064-6334-43a4-aafe-ace887ec2da6.jpeg">
+                    <p class="mt-2">Kişisel Bakım</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/29bcb34e-ae77-46f8-b27c-d36e50275709.jpeg">
+                    <p class="mt-2">Ev Bakım</p>
+                </div>
+            </div>
+            <div class="row catRows">
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/d737c0bd-538c-486c-9485-46aff62856d1.jpeg">
+                    <p class="mt-2">Ev & Yaşam</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/d6e1fc47-6dbe-4be0-9e21-8b3a3f9cfecd.jpeg">
+                    <p class="mt-2">Teknoloji</p>
+                </div>
+            </div>
+            <div class="row catRows">
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/907cbf21-00b7-4f94-b257-9fd8b104cf02.jpeg">
+                    <p class="mt-2">Evcil Hayvan</p>
+                </div>
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/517efd09-95b6-466a-980e-55db579ebddc.jpeg">
+                    <p class="mt-2">Bebek</p>
+                </div>
+            </div>
+            <div class="row catRows">
+                <div id="categories" class="col text-center divlink pt-3 mt-0" location.href='#'>
+                    <img src="https://market-product-images-cdn.getirapi.com/category/34e1cf54-bf96-498b-ba55-680b960cfcfc.jpeg">
+                    <p class="mt-2">Cinsel Sağlık</p>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </div>
+    <!--CATEGORIES XS SCREEN END-->
+
+
+    <!--CONTENT XL START-->
+    <div class="d-none d-xl-block">
+        <div class="container">
+            <div class="row">
+                <div class="col ml-0 pl-0">
+                    <h6 class="mt-4">Kampanyalar</h6>
+                    <div id="offer" class="mt-2">
+                        <img class="rounded" src="https://cdn.getir.com/misc/62a0ca37c43b9c36436ef4f4_banner_tr_1654704721813.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="row rounded navbackground">
+                <div class="col pt-1" style="color: #fff;">
+                    <h3 class="font-weight-bold ml-3 pt-5">Getir'i indirin!</h3>
+                    <h6 class="font-weight-bold ml-3 mt-3">İstediğiniz ürünleri dakikalar içinde kapınıza<br>getirelim.
+                    </h6>
+                    <ul class="navlist p-0 m-0 ml-3 mt-4">
+                        <li>
+                            <img class="rounded navfl ml-0" src="https://getir.com/_next/static/images/appstore-tr-141ed939fceebdcee96af608fa293b31.svg">
+                        </li>
+                        <li>
+                            <img class="rounded navfl ml-2" src="https://getir.com/_next/static/images/googleplay-tr-6b0c941b7d1a65d781fb4b644498be75.svg">
+                        </li>
+                        <li>
+                            <img class="rounded navfl ml-2" src="https://getir.com/_next/static/images/huawei-appgallery-tr-4b890fa3167bc62f9069edaf45aa7f30.svg">
+                        </li>
+                    </ul>
+                </div>
+                <div id="xlphone" class="col pt-1">
+                    <img class="float-right" src="img/phoneLanding.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--CONTENT XL END-->
+
+
+
+
+    <!--CONTENT LG START-->
+    <div class="d-none d-lg-block d-xl-none">
+        <div class="container">
+            <div class="row">
+                <div class="col pl-0 mt-4 ml-0">
+                    <h6 class="mt-4">Kampanyalar</h6>
+                    <div class="mt-2" id="offer">
+                        <img class="rounded" src="https://cdn.getir.com/misc/62a0ca37c43b9c36436ef4f4_banner_tr_1654704721813.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="row rounded navbackground">
+                <div class="col-8" style="color: #fff;">
+                    <h3 class="font-weight-bold ml-3 pt-5">Getir'i indirin!</h3>
+                    <h6 class="font-weight-bold ml-3 mt-3">İstediğiniz ürünleri dakikalar<br>içinde kapınıza getirelim.</h6>
+                    <ul class="navlist pl-0 ml-3 mt-4">
+                        <li class="ml-0">
+                            <img class="rounded navfl" src="https://getir.com/_next/static/images/appstore-tr-141ed939fceebdcee96af608fa293b31.svg">
+                        </li>
+                        <li class="ml-2 mt-2 pt-0">
+                            <img class="rounded navfl ml-2" src="https://getir.com/_next/static/images/googleplay-tr-6b0c941b7d1a65d781fb4b644498be75.svg">
+                        </li>
+                        <li class="ml-2 mt-2 pt-0">
+                            <img class="rounded navfl ml-2" src="https://getir.com/_next/static/images/huawei-appgallery-tr-4b890fa3167bc62f9069edaf45aa7f30.svg">
+                        </li>
+                    </ul>
+                </div>
+                <div id="lgphone" class="col-4 pb-0 mb-0">
+                    <img class="float-right pb-0 mb-0" src="img/phoneLandingsm.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--CONTENT LG END-->
+
+
+    <!--CONTENT MD START-->
+    <div class="d-block d-lg-none navbackground">
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col" style="color: #fff;">
+                    <h3 class="font-weight-bold ml-3 pt-3">Getir'i indirin!</h3>
+                    <h6 class="font-weight-bold ml-3 mt-2">İstediğiniz ürünleri dakikalar içinde kapınıza<br>getirelim.
+                    </h6>
+                    <ul class="navlist pl-0 ml-3 mt-3">
+                        <li class="ml-0 mt-0 pt-">
+                            <img class="rounded" src="https://getir.com/_next/static/images/appstore-tr-141ed939fceebdcee96af608fa293b31.svg">
+                        </li>
+                        <li class="ml-0 mt-2 pt-0">
+                            <img class="rounded" src="https://getir.com/_next/static/images/googleplay-tr-6b0c941b7d1a65d781fb4b644498be75.svg">
+                        </li>
+                        <li class="ml-0 mt-2 pt-0">
+                            <img class="rounded" src="https://getir.com/_next/static/images/huawei-appgallery-tr-4b890fa3167bc62f9069edaf45aa7f30.svg">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CONTENT MD END-->
+
+
+
+
+
+    <div class="container d-none d-xl-block">
+        <div class="row mt-5 features" style="background-color: #fafafa;">
+            <div class="col-4 pl-0" style=" background-color: #fafafa;">
+                <div class="pt-3 px-5 rounded pb-3 shadow">
+                    <p class="text-center mt-5">
+                        <img class="text-center" src="https://getir.com/_next/static/images/intro-in-minutes-a7a9238a73013642a6597c4db06653c1.svg">
+                    </p><br>
+                    <h5 class="text-center" style="color: #5D3EBC; font-size: 18px;">Her siparişinize bir kampanya</h5>
+                    <p class="text-center">Getir’de vereceğiniz her siparişe uygun bir kampanya bulabilirsiniz.</p>
+                </div>
+            </div>
+            <div class="col-4" style=" background-color: #fafafa;">
+                <div class="pt-3 px-5 rounded pb-3 shadow">
+                    <p class="text-center mt-5">
+                        <img class="text-center" src="https://getir.com/_next/static/images/intro-market-courier-34cd8b0ca1d547580d506566edfacf8d.svg">
+                    </p><br>
+                    <h5 class="text-center" style="color: #5D3EBC; font-size: 18px;">Dakikalar içinde kapınızda</h5>
+                    <p class="text-center">Getir’le siparişiniz dakikalar içinde kapınıza gelir.</p>
+                </div>
+            </div>
+            <div class="col-4 pr-0" style=" background-color: #fafafa;">
+                <div class="pt-3 px-5 rounded pb-3 shadow">
+                    <p class="text-center mt-5">
+                        <img class="text-center" src="https://getir.com/_next/static/images/intro-discount-6248544cb695830a2e25debd3c0f3d29.svg">
+                    </p><br>
+                    <h5 class="text-center" style="color: #5D3EBC; font-size: 18px;">Binlerce çeşit mutluluk</h5>
+                    <p class="text-center">Getir’de binlerce çeşit arasından seçiminizi yapabilirsiniz.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container d-none d-md-block d-xl-none">
+        <div class="row mt-5 features" style="background-color: #fafafa;">
+            <div class="col-4 pl-0" style=" background-color: #fafafa;">
+                <div class="pt-3 px-5 rounded pb-3 shadow">
+                    <p class="text-center mt-5">
+                        <img class="text-center" src="https://getir.com/_next/static/images/intro-in-minutes-a7a9238a73013642a6597c4db06653c1.svg">
+                    </p><br>
+                    <h5 class="text-center" style="color: #5D3EBC; font-size: 18px;">Her siparişinize bir kampanya</h5>
+                    <p class="text-center">Getir’de vereceğiniz her siparişe uygun bir kampanya bulabilirsiniz.</p>
+                </div>
+            </div>
+            <div class="col-4" style=" background-color: #fafafa;">
+                <div class="pt-3 px-5 rounded pb-3 shadow">
+                    <p class="text-center mt-5">
+                        <img class="text-center" src="https://getir.com/_next/static/images/intro-market-courier-34cd8b0ca1d547580d506566edfacf8d.svg">
+                    </p><br>
+                    <h5 class="text-center" style="color: #5D3EBC; font-size: 18px;">Dakikalar içinde kapınızda</h5>
+                    <p class="text-center">Getir’le siparişiniz dakikalar içinde kapınıza gelir.</p>
+                </div>
+            </div>
+            <div class="col-4 pr-0" style=" background-color: #fafafa;">
+                <div class="pt-3 px-5 rounded pb-3 shadow">
+                    <p class="text-center mt-5">
+                        <img class="text-center" src="https://getir.com/_next/static/images/intro-discount-6248544cb695830a2e25debd3c0f3d29.svg">
+                    </p><br>
+                    <h5 class="text-center" style="color: #5D3EBC; font-size: 18px;">Binlerce çeşit mutluluk</h5>
+                    <p class="text-center">Getir’de binlerce çeşit arasından seçiminizi yapabilirsiniz.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid d-block d-md-none features">
+        <div class="row mt-2" style="background-color: #fafafa;">
+            <div class="col-12" style=" background-color: #fafafa;">
+                <div class="pt-3 px-5 rounded pb-3 shadow">
+                    <p class="text-center mt-5">
+                        <img class="text-center" src="https://getir.com/_next/static/images/intro-in-minutes-a7a9238a73013642a6597c4db06653c1.svg">
+                    </p><br>
+                    <h5 class="text-center" style="color: #5D3EBC; font-size: 18px;">Her siparişinize bir kampanya</h5>
+                    <p class="text-center">Getir’de vereceğiniz her siparişe uygun bir kampanya bulabilirsiniz.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-1" style="background-color: #fafafa;">
+            <div class="col-12 mt-4" style=" background-color: #fafafa;">
+                <div class="pt-3 px-5 rounded pb-3 shadow">
+                    <p class="text-center mt-5">
+                        <img class="text-center" src="https://getir.com/_next/static/images/intro-market-courier-34cd8b0ca1d547580d506566edfacf8d.svg">
+                    </p><br>
+                    <h5 class="text-center" style="color: #5D3EBC; font-size: 18px;">Dakikalar içinde kapınızda</h5>
+                    <p class="text-center">Getir’le siparişiniz dakikalar içinde kapınıza gelir.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-1" style="background-color: #fafafa;">
+            <div class="col-12 mt-4" style=" background-color: #fafafa;">
+                <div class="pt-3 px-5 rounded pb-3 shadow">
+                    <p class="text-center mt-5">
+                        <img class="text-center" src="https://getir.com/_next/static/images/intro-discount-6248544cb695830a2e25debd3c0f3d29.svg">
+                    </p><br>
+                    <h5 class="text-center" style="color: #5D3EBC; font-size: 18px;">Binlerce çeşit mutluluk</h5>
+                    <p class="text-center">Getir’de binlerce çeşit arasından seçiminizi yapabilirsiniz.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--CONTENT END-->
+
+    <!--FOOTER START-->
+    <div class="d-none d-xl-block" style="background-color: #fff;">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-2 pt-3 ml-0 pl-0 footer">
+                    <a>Getir'i indirin!</a>
+                    <img class="rounded mt-3"
+                        src="https://getir.com/_next/static/images/appstore-tr-141ed939fceebdcee96af608fa293b31.svg">
+                    <img class="rounded mt-2"
+                        src="https://getir.com/_next/static/images/googleplay-tr-6b0c941b7d1a65d781fb4b644498be75.svg">
+                    <img class="rounded mt-2"
+                        src="https://getir.com/_next/static/images/huawei-appgallery-tr-4b890fa3167bc62f9069edaf45aa7f30.svg">
+                </div>
+                <div class="col-9">
+                    <div class="row">
+                        <div class="col pt-3 float-left footer">
+                            <a>Getir'i keşfedin</a>
+                            <ul class="navlist">
+                                <li class="mt-3">Hakkımızda</li>
+                                <li class="mt-2">Kariyer</li>
+                                <li class="mt-2">Teknoloji Kariyerleri</li>
+                                <li class="mt-2">İletişim</li>
+                                <li class="mt-2">Sosyal Sorumluluk Projeleri</li>
+                            </ul>
+                        </div>
+                        <div class="col pt-3 float-left footer">
+                            <a>Yardıma mı ihtiyacınız var?</a>
+                            <ul class="navlist">
+                                <li class="mt-3">Sıkça Sorulan Sorular</li>
+                                <li class="mt-2">Kişisel Verilerin Korunması</li>
+                                <li class="mt-2">Gizlilik Politikası</li>
+                                <li class="mt-2">Kullanım Koşulları</li>
+                                <li class="mt-2">Çerez Politikası</li>
+                            </ul>
+                        </div>
+                        <div class="col pt-3 float-left footer">
+                            <a>İş Ortağımız Olun</a>
+                            <ul class="navlist">
+                                <li class="mt-3">Bayimiz Olun</li>
+                                <li class="mt-2">Deponuzu Kiralayın</li>
+                                <li class="mt-2">GetirYemek Restoranı Olun</li>
+                                <li class="mt-2">GetirÇarşı İşletmesi Olun</li>
+                                <li class="mt-2">Zincir Restoranlar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1 pt-3 mr-0 pr-0">
+                    <p class="text-right">
+                        <img class="rounded" style="width: 90px; height: 100px;" src="https://cdn.getir.com/getirweb-images/common/etbis.png"></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" style="background-color: #fff; font-size: 14px;">
+                <div class="col">
+                    <div class="col-2 ml-0 pl-0 py-4 float-left">© 2022 Getir</div>
+                    <div class="col-8 pt-4 float-left ml-0 pl-0">
+                        <ul>
+                            <li>Bilgi Toplumu Hizmetleri</li>
+                        </ul>
+                    </div>
+                    <div class="col-3 float-left"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER END-->
+    <!--FOOTER LG START-->
+    <div class="d-none d-md-block d-xl-none" style="background-color: #fff;">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-3 pt-3 ml-0 pl-0 footer">
+                    <a>Getir'i indirin!</a>
+                    <img class="rounded mt-3" src="https://getir.com/_next/static/images/appstore-tr-141ed939fceebdcee96af608fa293b31.svg">
+                    <img class="rounded mt-2" src="https://getir.com/_next/static/images/googleplay-tr-6b0c941b7d1a65d781fb4b644498be75.svg">
+                    <img class="rounded mt-2" src="https://getir.com/_next/static/images/huawei-appgallery-tr-4b890fa3167bc62f9069edaf45aa7f30.svg">
+                </div>
+                <div class="col-9">
+                    <div class="row">
+                        <div class="col pt-3 float-left footer">
+                            <a id="fa">Getir'i keşfedin</a>
+                            <ul class="navlist">
+                                <li class="mt-3">Hakkımızda</li>
+                                <li class="mt-2">Kariyer</li>
+                                <li class="mt-2">Teknoloji Kariyerleri</li>
+                                <li class="mt-2">İletişim</li>
+                                <li class="mt-2">Sosyal Sorumluluk Projeleri</li>
+                            </ul>
+                        </div>
+                        <div class="col pt-3 float-left footer">
+                            <a>Yardıma mı ihtiyacınız var?</a>
+                            <ul class="navlist">
+                                <li class="mt-3">Sıkça Sorulan Sorular</li>
+                                <li class="mt-2">Kişisel Verilerin Korunması</li>
+                                <li class="mt-2">Gizlilik Politikası</li>
+                                <li class="mt-2">Kullanım Koşulları</li>
+                                <li class="mt-2">Çerez Politikası</li>
+                            </ul>
+                        </div>
+                        <div class="col pt-3 float-left footer">
+                            <a>İş Ortağımız Olun</a>
+                            <ul class="navlist">
+                                <li class="mt-3">Bayimiz Olun</li>
+                                <li class="mt-2">Deponuzu Kiralayın</li>
+                                <li class="mt-2">GetirYemek Restoranı Olun</li>
+                                <li class="mt-2">GetirÇarşı İşletmesi Olun</li>
+                                <li class="mt-2">Zincir Restoranlar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" style="background-color: #fff; font-size: 14px;">
+                <div class="col">
+                    <div class="col-2 ml-0 pl-0 py-4 float-left">© 2022 Getir</div>
+                    <div class="col-8 pt-4 float-left ml-0 pl-0">
+                        <ul>
+                            <li>Bilgi Toplumu Hizmetleri</li>
+                        </ul>
+                    </div>
+                    <div class="col-3 float-left"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER LG END-->
+    <!--FOOTER MOBILE START-->
+    <div class="d-block d-md-none mt-5" style="background-color: #fff;">
+        <div class="container-fluid">
+            <div class="row pl-3">
+                <div class="col mt-3 ml-0 pl-0 mr-0 pr-0 footer">
+                    <a>Getir'i indirin!</a><br>
+                    <img class="rounded mt-3" src="https://getir.com/_next/static/images/appstore-tr-141ed939fceebdcee96af608fa293b31.svg"><br>
+                    <img class="rounded mt-2" src="https://getir.com/_next/static/images/googleplay-tr-6b0c941b7d1a65d781fb4b644498be75.svg"><br>
+                    <img class="rounded mt-2" src="https://getir.com/_next/static/images/huawei-appgallery-tr-4b890fa3167bc62f9069edaf45aa7f30.svg"><br>
+                </div>
+            </div>
+            <div class="row pl-3">
+                <div class="col mt-3 ml-0 mr-0 pl-0 pr-0">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <a style="color: #5D3EBC; font-size: 20px;" id="flush-headingOne">
+                                <button class="accordion-button collapsed"
+                                    style="color: #5D3EBC; border: 0px; font-size: 20px; background-color: #fff;"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Getir'i keşfedin >
+                                </button>
+                            </a>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class.
+                                    This is the first item's accordion body.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed"
+                                    style="color: #5D3EBC; border: 0px; font-size: 20px; background-color: #fff;"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                    aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Yardıma mı ihtiyacınız var? >
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is
+                                    intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's
+                                    accordion body. Let's imagine this being filled with some actual content.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed"
+                                    style="color: #5D3EBC; border: 0px; font-size: 20px; background-color: #fff;"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                    İş Ortağımız Olun >
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is
+                                    intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's
+                                    accordion body. Nothing more exciting happening here in terms of content, but just filling
+                                    up the space to make it look, at least at first glance, a bit more representative of
+                                    how this would look in a real-world application.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--FOOTER MOBILE END-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
+</body>
+</html>

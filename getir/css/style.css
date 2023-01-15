@@ -1,0 +1,190 @@
+body {
+    overflow-x: hidden !important;
+    background-color: #fafafa !important;
+}
+.navbackground {
+    background-color: #4C3398 !important;
+}
+.navfont {
+    font-family: 'Cocon' !important;
+}
+@font-face {
+    font-family: 'Cocon' !important;
+    src: url('Cocon-Regular.woff2') format('woff2') !important;
+    font-weight: 500 !important;
+    font-style: normal !important;
+    font-display: swap !important;
+}
+.colorwhite {
+    color: #DBDBFF !important;
+}
+.coloryellow {
+    color: #FFD300 !important;
+}
+.navstyleactive {
+    background-color: #5D3EBC !important;
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+}
+.navstyle:hover {
+    background-color: #5D3EBC !important;
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+}
+.margintop {
+    margin-top: -10px !important;
+}
+.navlist {
+    list-style-type: none !important;
+}
+a {
+    text-decoration: none !important;
+}
+.navfl {
+    float: left !important;
+}
+.navml {
+    margin-left: 1px !important;
+}
+div>img {
+    margin-top: -2px !important;
+}
+.fontdefault {
+    font-family:  'Open Sans', sans-serif !important;
+    font-size: 14.4px !important;
+}
+.fontbold {
+    font-weight: 600 !important;
+}
+.imgstyle {
+    width: 21px !important;
+    height: 21px !important;
+}
+.z-index-1 {
+    z-index: 999 !important;
+}
+.z-index-2 {
+    z-index: 99 !important;
+}
+.z-index-3 {
+    z-index: 9 !important;
+}
+.z-index-4 {
+    z-index: 1 !important;
+}
+div>h6 {
+    font-size: 15px !important;
+}
+#categories>img {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 15% !important;
+    border: #aaa solid 1px !important;
+}
+#categories {
+    padding-top: -10px !important;
+}
+#categories:hover {
+    background-color: #F3F0FE !important;
+    color: #5D3EBC !important;
+}
+.divlink {
+    cursor:pointer !important;
+}
+.getirshadow {
+    -webkit-box-shadow: 0px 0px 18px 3px rgba(230,230,230,1) !important;
+    -moz-box-shadow: 0px 0px 18px 3px rgba(230,230,230,1) !important;
+    box-shadow: 0px 0px 18px 3px rgba(230,230,230,1) !important;
+}
+
+.langImg {
+    width: 17px !important;
+    height: 17px !important;
+}
+.sliderDiv {
+    background-color: #fff !important;
+    z-index: 1 !important;
+}
+#sliderImg {
+    width: 100% !important;
+    height: 580px !important;
+}
+#purpleLayout {
+    position: relative;
+    z-index: 2 !important;
+    width: 100% !important;
+    height: 578px !important;
+    background: rgb(93,62,188) !important;
+    background: linear-gradient(90deg, rgba(93,62,188,1) 0%, rgba(95,64,189,0.75) 28%, rgba(112,85,196,0.4318102240896359) 68%,
+        rgba(153,133,213,0) 90%, rgba(255,255,255,0) 100%) !important;
+}
+#slogan {
+    position: absolute !important;
+    z-index: 3 !important;
+    margin-top: 55px !important;
+}
+.loginArea {
+    background-color: #fff !important;
+    height: 195px !important;
+    width: 400px !important;
+}
+.loginArea>p {
+    color:#4C3398 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 18px !important;
+}
+.mobileContent {
+    margin-top: -30px !important;
+}
+.mobileContent>div>img {
+    width: 100% !important;
+}
+.catRows {
+    font-size: 14px !important;
+    font-weight: bold !important;
+    color: #555 !important;
+}
+#offer>img {
+    width: 400px;height: 200;
+}
+#xlphone>img {
+    height: 275px !important;
+    width: 550px !important;
+    margin-right: -15px !important;
+    border-bottom-right-radius: 3px !important;
+}
+#lgphone {
+    height: 220px !important;
+    width: 259px !important;
+    margin-right: -50px !important;
+    margin-top: 25px !important;
+}
+#lgphone>img {
+    height: 210px !important;
+    margin-right: -15px !important;
+    margin-top: 10px !important;
+    border-bottom-right-radius: 1px !important;
+}
+.shadow {
+    min-height: 385px !important;
+    max-height: 450px !important;
+    box-shadow: 0px 0px 41px 9px rgba(0,0,0,0.04) !important;
+    -webkit-box-shadow: 0px 0px 41px 9px rgba(0,0,0,0.04) !important;
+    -moz-box-shadow: 0px 0px 41px 9px rgba(0,0,0,0.04) !important;
+    background-color: #fff !important;
+}
+.features>div>div>p {
+    font-size: 14.5px !important;
+}
+.footer>a {
+    color: #5D3EBC !important;
+    font-size: 20px;
+}
+.footer>ul {
+    font-size:15px !important;
+    margin-left: 0px !important;
+    padding-left: 0px !important;
+}
+.pad5 {
+    padding-top: 5px;
+}
